@@ -1,0 +1,39 @@
+.features {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.features__heading {
+  flex: 2;
+}
+
+.features__heading a {
+  display: block;
+  color: var(--color-subtext);
+  font-weight: 500;
+  font-size: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+.features__content {
+  flex: 3;
+  margin-left: 3rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 1050px) {
+  .features {
+    flex-direction: column;
+    gap: 6rem;
+  }
+  .features__content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 550px) {
+}

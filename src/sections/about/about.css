@@ -1,0 +1,45 @@
+.about__quote {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0 0;
+}
+
+.about__quote h2 {
+  max-width: 40rem;
+}
+.about__quote a {
+  display: block;
+  color: var(--color-subtext);
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.about__content {
+  display: flex;
+  gap: 2.5rem;
+  margin: 6rem 0 0;
+}
+
+/* Media queries */
+@media screen and (max-width: 1050px) {
+  .about__quote {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.7rem;
+  }
+  .about__content {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 550px) {
+  .about__quote a {
+    font-weight: 400;
+    font-size: 0.8rem;
+  }
+}

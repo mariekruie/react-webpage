@@ -1,0 +1,42 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.flex2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-bottom: 1.5rem;
+}
+.flex2 .feature__title {
+  font-size: var(--font-med);
+}
+.flex2 .feature__text {
+  font-size: var(--font-sml);
+}
+.feature__title {
+  min-width: 30%;
+  position: relative;
+  margin-bottom: 2rem;
+  color: #fff;
+  font-weight: 700;
+  font-size: var(--font-lg);
+}
+
+.feature__title::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: 0;
+  width: 2.5rem;
+  height: 0.3rem;
+  background: var(--gradient-bar);
+}
+
+.feature__text {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
